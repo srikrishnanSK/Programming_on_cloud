@@ -1,0 +1,43 @@
+1. Go to the API Gateway in the same region.
+2. Choose Build from REST API.
+3. NEW API and Enter the name, descprtion. Click on create.
+4. Click on resources-> Actions-> Create method.
+5. Choose Get method and click on create.
+6. Once its created click on the Get method displayed.
+6. Input the following configurations first:-
+Integration type: Lambda function
+
+Use Lambda proxy integration: Yes
+
+Lambda Region: us-west-1
+
+Lambda function: search-es-lambda
+
+Invoke with caller credentials: No
+
+Credentials cache: Do not add caller credentials to cache key
+
+Use default timeout: Yes
+
+7. Once this is done, click on Method request and configure the following parameters:-
+Authorization: none
+
+Request validator: Validate query string parameters and headers
+
+API key required: false
+
+URL Query String Parameters
+
+Name: q
+
+Required: Yes.
+
+8. Now click on Test and pass a query parameter to check abd verify its operation.
+9. Once sucessfull click on Usage plans and configure it for the foloowing default parameters:-
+Enable throttling: Yes
+
+Rate: 1000
+
+Burst: 500
+10. Head back to resource and click on Deploy API. Give the name as New Stage , Name and description.
+11. Go to the Usage plans again and add the Stage which was initiated before to it.

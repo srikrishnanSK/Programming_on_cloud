@@ -1,0 +1,10 @@
+Proceedure to create an Elastic Search Domain:-
+1. Go to elastic search service in your region.
+2. Click on create domain.
+3. Give it a name and choose developmenet and testing.
+   Note:- The version can be latest no need to change the default value.
+4. Choose t2.small sotrage  as it allows 750 hours of free domain usage.
+5. Rest of the parameters are default, further click on next page.
+6. Choose a VPC, subnet and security gorup and remeber it as tge same VPC need to be provided for Lambda.
+7. Click on next , Review and initiate the domain.
+   Note:- The domain would take about 10 min to get active

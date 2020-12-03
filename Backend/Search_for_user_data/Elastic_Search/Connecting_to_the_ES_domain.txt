@@ -1,0 +1,6 @@
+Proceedure to connect an Elastic Search Domain:-
+1. Since its been established in a VPC , create an EC2 instance with default specifications and initiate it.
+2. After it has been initiated , click on the instance and choose actions.
+3.Choose security group and click on change security group.
+4. Add the default security group to it to allow all ports access.
+5. Once this is done and the ES is connected Enter the the first command in comands_ES.txt to check if you have sucessfully established connection with the ES.

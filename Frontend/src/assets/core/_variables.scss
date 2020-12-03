@@ -1,0 +1,22 @@
+$spacer: 1rem !default;
+$border-radius-sm: 0.2rem !default;
+$gray-300: #dee2e6 !default;
+$border-color: $gray-300 !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+$enable-rounded: true !default;
+$white: #fff !default;
+$black: #000 !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+// // Variables
+$font-size-base: 0.95rem; // Assumes the browser default, typically `16px`
+
+$layout-spacer: ($spacer * 2);
+
+// // Click & Go Layout Components
+$header-height: 55px;
+$sidebar-width: 0px;
+$app-sidebar-transition: cubic-bezier(0.685, 0.0473, 0.346, 1);
+$font-size-xs: $font-size-base;

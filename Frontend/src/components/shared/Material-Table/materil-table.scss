@@ -1,0 +1,58 @@
+@mixin status {
+  height: auto;
+  min-height: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.materil-table {
+  .goods {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .MuiTable-root {
+    overflow: hidden;
+  }
+
+  .MuiTableSortLabel-root:hover {
+    color: #fff;
+  }
+  th:first-child {
+    border-top-left-radius: 5px;
+  }
+  th:last-child {
+    border-top-right-radius: 5px;
+  }
+  .orange {
+    background-color: #fb3;
+    @include status();
+  }
+  .liteGreen {
+    background-color: #2bbbad;
+    @include status();
+  }
+  .green {
+    background-color: #00c851;
+    @include status();
+  }
+  .blue {
+    background-color: #28619e;
+    @include status();
+  }
+  .purple {
+    background-color: #a6c;
+    @include status();
+  }
+  .liteBlue {
+    background-color: #4285f4;
+    @include status();
+  }
+  .red {
+    background-color: #ff3547;
+    @include status();
+  }
+  .published {
+    background-color: #33b5e5;
+    @include status();
+  }
+}

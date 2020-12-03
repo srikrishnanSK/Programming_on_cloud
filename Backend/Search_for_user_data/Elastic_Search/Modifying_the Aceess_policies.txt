@@ -1,0 +1,20 @@
+The ES domain policies needs to be modified in such a way that allows
+1. REST API calls,
+2. Searching through a lambda function,
+3. Searching the ES.
+
+The following needs to be included or modified in the access policies of ES domain:-
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::162492470455:role/Lambda-role" # Changing from "AWS" : "*"
+      },
+      "Action": "es:ESHttpGet", # Chnaging from "es:*" to the current 
+      "Resource": "arn:aws:es:us-east-1:162492470455:domain/user-data/_search" # Changing from  user-data/* tp the current
+    }
+  ]
+}

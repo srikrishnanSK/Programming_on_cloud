@@ -1,0 +1,4 @@
+1. Go to the Elastic_search folder.
+2. Follow the Creating_a_domain.txt, followed by Connecting_to_the_ES.txt and finally Mod-fying_the_access_policies.txt.
+3.Follow the Creating_a_lambda.txt in the Lambda Folder.
+4. Finally follow the setting_the_API_gateway.txt in API_gateway_Folder

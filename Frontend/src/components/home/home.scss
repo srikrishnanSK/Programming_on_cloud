@@ -1,0 +1,57 @@
+.home {
+  main {
+    position: relative;
+    transition: 0.3s all;
+    overflow: hidden;
+    z-index: 1;
+    color: black;
+    .video-wrapper {
+      position: relative;
+      z-index: 999;
+      height: 100vh;
+      width: 100%;
+      transition: 0.3s width;
+      margin: 0 auto;
+      .container {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+      }
+      .content {
+        position: absolute;
+        top: calc(50% - 100px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        .title {
+          text-align: center;
+          font-size: 50px;
+          color: white;
+          font-weight: bold;
+          line-height: 75px;
+          margin: 0 auto 40px;
+        }
+        .form-container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 50px;
+          min-width: 650px;
+          display: flex;
+          padding-bottom: 10px;
+          .input {
+            margin: 0px 30px;
+            width: 100%;
+          }
+          .input:first-child {
+            margin: 0px 30px;
+            width: 50%;
+          }
+
+          Button {
+            padding: 0px 30px;
+          }
+        }
+      }
+    }
+  }
+}

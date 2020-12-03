@@ -1,0 +1,16 @@
+Proceedure to create an Lambda Function:-
+1. Go to the Lambda function service in your region.
+2. Click on create function.
+3. Enter the name, choose python 3.8 and choose the lambda role as Lambda-role that allows the following:-
+   AdministratorAccess
+   AWSLambdaBasicExecutionRole
+   AWSQuickSightElasticsearchPolicy
+4. Go to addintional advanced setting and chose the same VPC, subnet and the security group as ES domain.
+5. Click on create function.
+6. Click on the Test and give it a name.
+7. Run the Test with the given name to verify succesfull running of the program.
+8. Upload the lambda.zip by clicking on Actions.
+9. Once the file is uploaded deploy and run a test to see its verification.
+Note:- Change the query parameter to specific data instead of general query parameter.
+In addition to the above it can only be queried after the aceess policies have been modified for the ES domain to allows REST API calls.
+

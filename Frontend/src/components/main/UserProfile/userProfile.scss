@@ -1,0 +1,67 @@
+.profile {
+  max-width: 650px;
+  margin: auto;
+}
+.profile .photo {
+  max-width: 150px;
+  margin: auto;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #eee;
+  border: 2px solid #8e8484;
+  background-size: cover;
+  cursor: pointer;
+}
+.profile .profileForm {
+  margin: 10px 0px;
+}
+.profile .cardRoot {
+  padding: 15px;
+}
+.profile .actions {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+.profile .actions button {
+  margin: 10px;
+}
+.text-center {
+  text-align: center;
+}
+.profile-success {
+  padding: 20px 10px;
+  background-color: #8bc34a;
+  color: #fff;
+  font-weight: 600;
+  margin: auto;
+  max-width: 40%;
+  text-align: center;
+  border-radius: 5px;
+}
+.MuiFormGroup-root {
+  flex-direction: row !important;
+}
+.MuiButton-containedPrimary,
+.MuiButton-containedPrimary:hover {
+  color: #fff !important;
+  background-color: #03a9f4 !important;
+}
+.MuiStepIcon-root.MuiStepIcon-active,
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #2aa9f4 !important;
+}
+.MuiFormHelperText-contained {
+  margin-left: 0px !important;
+}
+.mobile {
+  width: 400px;
+  margin: auto;
+  .pr-5 {
+    padding-right: 5px;
+  }
+}
