@@ -25,10 +25,10 @@ import com.amazonaws.services.sns.AmazonSNSClientBuilder;
 public class AwsServBuilder {
 	
 	
-	@Value("${com.matata.sans.aws_key}")
+	@Value("${com.coen.assg.aws_key}")
 	private   String AWS_KEY;
 	
-	@Value("${com.matata.sans.aws_value}")
+	@Value("${com.coen.assg.aws_value}")
 	private  String AWS_VALUE;
 	
 	
@@ -105,7 +105,7 @@ public class AwsServBuilder {
 	
 	public AmazonSNS snsClientBuilder()
 	{
-		 AWSCredentials credientials = new BasicAWSCredentials("AKIASLVKOKS3RCQRIN5G","ZUIryGT+Tw2qmi274lng/F3b5rfyptoqdsLmx1Uk");
+		 AWSCredentials credientials = new BasicAWSCredentials(AWS_KEY,AWS_VALUE);
 			ClientConfiguration clientConfig = new ClientConfiguration();
 		    clientConfig.setConnectionTimeout(30000);
 		    clientConfig.setRequestTimeout(60000);

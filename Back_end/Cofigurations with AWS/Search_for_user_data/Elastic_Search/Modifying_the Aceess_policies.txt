@@ -11,7 +11,7 @@ The following needs to be included or modified in the access policies of ES doma
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::162492470455:role/Lambda-role" # Changing from "AWS" : "*"
+        "AWS": "Your IAM Role" # Changing from "AWS" : "*"
       },
       "Action": "es:ESHttpGet", # Chnaging from "es:*" to the current 
       "Resource": "arn:aws:es:us-east-1:162492470455:domain/user-data/_search" # Changing from  user-data/* tp the current
