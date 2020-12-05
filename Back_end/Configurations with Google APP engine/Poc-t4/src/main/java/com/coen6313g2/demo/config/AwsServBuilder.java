@@ -83,25 +83,6 @@ public class AwsServBuilder {
 	}
 	
 	
-//	public AmazonSNS snsClientBuilder()
-//	{
-//		 AWSCredentials credientials = new BasicAWSCredentials("AKIASLVKOKS3RCQRIN5G","ZUIryGT+Tw2qmi274lng/F3b5rfyptoqdsLmx1Uk");
-//			ClientConfiguration clientConfig = new ClientConfiguration();
-//		    clientConfig.setConnectionTimeout(30000);
-//		    clientConfig.setRequestTimeout(60000);
-//		    clientConfig.setProtocol(Protocol.HTTPS);
-//		    
-//		    return AmazonSNSClientBuilder
-//			        .standard()
-//			        .withClientConfiguration(clientConfig)
-//			        .withCredentials(new AWSStaticCredentialsProvider(credientials))
-//			        .withRegion("eu-east-1")
-//			        .build();
-//		    
-//		    
-//		
-//		
-//	}
 	
 	public AmazonSNS snsClientBuilder()
 	{
