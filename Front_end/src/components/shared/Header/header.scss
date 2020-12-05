@@ -1,0 +1,86 @@
+// Core
+@import "../../../assets/core/base.scss";
+
+.app-header {
+  background:#3b4d61 !important;
+  color: white !important;
+  padding: 0px 15px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+  font-size: 16px;
+  font-weight: bold;
+  position: fixed !important;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  &.home-header {
+    background: #282828 !important;
+  }
+}
+
+.app-header-toolbar {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-left: ($spacer);
+  padding-right: ($spacer);
+
+  .btn-inverse:hover {
+    background: rgba(255, 255, 255, 0.07);
+  }
+}
+
+.app-logo-img {
+  width: 28px;
+  height: 28px;
+}
+
+.app-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo-btn {
+  padding: $spacer / 2;
+  background: rgba(255, 255, 255, 0.05);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.header-logo-wrapper-link {
+  min-width: 100px;
+}
+
+.app-logo-text {
+  font-size: $font-size-base;
+  font-weight: bold;
+  width: auto;
+  display: block;
+}
+
+.toggle-sidebar-btn-mobile {
+  display: none;
+
+  // @include media-breakpoint-down(md) {
+  //   display: block;
+  // }
+}
+.menus {
+  span {
+    padding: 0px 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    &.active {
+      font-weight: bold;
+      color: #c6d7eb;
+      border: 2px solid;
+      padding: 1px 14px;
+      border-radius: 15px;
+    }
+  }
+}
